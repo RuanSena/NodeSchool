@@ -1,0 +1,5 @@
+const through = require('through2')
+const trumpet = require('trumpet')
+const tr = trumpet()
+process.stdin.pipe(tr)
+tr.select('.loud')
